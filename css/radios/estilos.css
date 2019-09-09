@@ -1,0 +1,74 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url(fondo-login.jpg);
+	background-repeat: no-repeat;
+	background: #fff;
+	font-size: 16px;
+	font-family: "Roboto";
+
+}
+
+.wrap{
+	width: 98%;
+	max-width: 1000px;
+	margin: 0 20px;
+}
+
+.formulario h3{
+	font-size: 12px;
+	color: #001F3F;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+.formulario > div{
+	padding: 20px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.formulario input[type="radio"]{
+	display: none;
+}
+
+.formulario .radios label{
+	color: #0074D9;
+	background-color: rgba(0,0,0,.1);
+	padding: 5px 15px 5px 51px;
+	display: inline-block;
+	position: relative;
+	font-size: 1em;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.formulario .radios label:hover{
+	background-color: rgba(0,116,217,.1);
+}
+
+.formulario .radios label:before{
+	content: "";
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	background: none;
+	border: 3px solid #0074D9;
+	border-radius: 50%;
+	position: absolute;
+	left: 17px;
+	top: 4px;
+}
+
+.formulario input[type="radio"]:checked + label{
+	padding: 15px 15px;
+	background: #0074D9;
+	border-radius: 2px;
+	color: #fff
+}
+.formulario input[type="radio"]:checked + label:before{
+	display: none;
+}
